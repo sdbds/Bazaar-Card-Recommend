@@ -1,0 +1,5 @@
+D:\MAC\bazaar\BazaarPlusPlus\obj\Release\netstandard2.1\BazaarPlusPlus.csproj.AssemblyReference.cache
+D:\MAC\bazaar\BazaarPlusPlus\obj\Release\netstandard2.1\BazaarPlusPlus.GeneratedMSBuildEditorConfig.editorconfig
+D:\MAC\bazaar\BazaarPlusPlus\obj\Release\netstandard2.1\BazaarPlusPlus.AssemblyInfoInputs.cache
+D:\MAC\bazaar\BazaarPlusPlus\obj\Release\netstandard2.1\BazaarPlusPlus.AssemblyInfo.cs
+D:\MAC\bazaar\BazaarPlusPlus\obj\Release\netstandard2.1\BazaarPlusPlus.csproj.CoreCompileInputs.cache

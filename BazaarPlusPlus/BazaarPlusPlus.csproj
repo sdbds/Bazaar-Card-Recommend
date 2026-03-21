@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E396EDE3-BC57-4C0E-9BEE-05F96E0DBCC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BazaarPlusPlus</RootNamespace>
+    <AssemblyName>BazaarPlusPlus</AssemblyName>
+    <TargetFrameworkVersion>v2.1</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="BazaarGameClient">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\BazaarGameClient.dll</HintPath>
+    </Reference>
+    <Reference Include="BazaarGameShared">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\BazaarGameShared.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx" />
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TheBazaarRuntime">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\TheBazaarRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\The Bazaar\TheBazaar_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardRatingInfo.cs" />
+    <Compile Include="CardRatingDatabase.cs" />
+    <Compile Include="BoardPose.cs" />
+    <Compile Include="BoardRenderModel.cs" />
+    <Compile Include="BppLog.cs" />
+    <Compile Include="CardJsonPathResolver.cs" />
+    <Compile Include="CardTooltipControllerLockTogglePatch.cs" />
+    <Compile Include="CardTooltipDataPassivePatch.cs" />
+    <Compile Include="CombatFrameAdvancePatch.cs" />
+    <Compile Include="CombatSimPatch.cs" />
+    <Compile Include="CombatSpeedPatch.cs" />
+    <Compile Include="CombatStatusBar.cs" />
+    <Compile Include="DebugPanel.cs" />
+    <Compile Include="DebugPanelSection.cs" />
+    <Compile Include="DebugPanelState.cs" />
+    <Compile Include="EncounterPreviewSpecConverter.cs" />
+    <Compile Include="EncounterTracker.cs" />
+    <Compile Include="FixedAnchorStrategy.cs" />
+    <Compile Include="GameDataReader.cs" />
+    <Compile Include="Game\ItemEnchantPreview\ItemEnchantPreviewCache.cs" />
+    <Compile Include="Game\ItemEnchantPreview\ItemEnchantPreviewCandidateSelector.cs" />
+    <Compile Include="Game\ItemEnchantPreview\ItemEnchantPreviewEligibility.cs" />
+    <Compile Include="Game\ItemEnchantPreview\ItemEnchantPreviewFormatting.cs" />
+    <Compile Include="Game\ItemEnchantPreview\ItemEnchantPreviewService.cs" />
+    <Compile Include="Game\ItemEnchantPreview\Preview\ItemEnchantPreviewCardCloneFactory.cs" />
+    <Compile Include="Game\ItemEnchantPreview\Preview\ItemEnchantPreviewRenderer.cs" />
+    <Compile Include="Game\ItemEnchantPreview\Preview\ItemEnchantPreviewSnapshot.cs" />
+    <Compile Include="Game\ItemEnchantPreview\Preview\ItemEnchantPreviewSnapshotFactory.cs" />
+    <Compile Include="IBoardAnchorStrategy.cs" />
+    <Compile Include="IBoardRenderTarget.cs" />
+    <Compile Include="InMemoryPreviewDataSource.cs" />
+    <Compile Include="IPreviewCardFactory.cs" />
+    <Compile Include="IPreviewDataSource.cs" />
+    <Compile Include="ItemAttr.cs" />
+    <Compile Include="KeyBindings.cs" />
+    <Compile Include="LocalCardTemplateCatalog.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="ModState.cs" />
+    <Compile Include="MonsterBoardCardInfo.cs" />
+    <Compile Include="MonsterDatabase.cs" />
+    <Compile Include="MonsterDatabasePreviewDataSource.cs" />
+    <Compile Include="MonsterInfo.cs" />
+    <Compile Include="MonsterLockShowcaseController.cs" />
+    <Compile Include="MonsterLockShowcaseRuntime.cs" />
+    <Compile Include="MonsterPreviewBoard.cs" />
+    <Compile Include="MonsterPreviewBoardRenderTarget.cs" />
+    <Compile Include="MonsterPreviewController.cs" />
+    <Compile Include="MonsterPreviewDebugController.cs" />
+    <Compile Include="MonsterPreviewDebugTuner.cs" />
+    <Compile Include="MonsterPreviewDefaults.cs" />
+    <Compile Include="MonsterPreviewItemCardFactory.cs" />
+    <Compile Include="MonsterPreviewOverlayCoordinator.cs" />
+    <Compile Include="MonsterPreviewSkillCardFactory.cs" />
+    <Compile Include="MonsterPreviewWarmupController.cs" />
+    <Compile Include="MonsterSkillInfo.cs" />
+    <Compile Include="MyPluginInfo.cs" />
+    <Compile Include="NameOverrideHelper.cs" />
+    <Compile Include="NextClickCloseFrameGate.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="PreviewBoardDebugOptions.cs" />
+    <Compile Include="PreviewBoardModel.cs" />
+    <Compile Include="PreviewBoardPresentation.cs" />
+    <Compile Include="PreviewBoardRequest.cs" />
+    <Compile Include="PreviewBoardSession.cs" />
+    <Compile Include="PreviewBoardSignature.cs" />
+    <Compile Include="PreviewBoardSurfaceBlocksUnderlyingCardsPatch.cs" />
+    <Compile Include="PreviewBoardSurfaceMarker.cs" />
+    <Compile Include="PreviewCardKind.cs" />
+    <Compile Include="PreviewCardLifecyclePolicy.cs" />
+    <Compile Include="PreviewCardSpec.cs" />
+    <Compile Include="PreviewCardSpecFilter.cs" />
+    <Compile Include="PreviewRenderGenerationGate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunInfo.cs" />
+    <Compile Include="RunStateSyncController.cs" />
+    <Compile Include="SetHeroNamePatch.cs" />
+    <Compile Include="ShowcaseCardClickPatch.cs" />
+    <Compile Include="ShowcaseCardMarker.cs" />
+    <Compile Include="ShowcaseCardShowTooltipsPatch.cs" />
+    <Compile Include="ShowcaseDisableLockCanvasPatch.cs" />
+    <Compile Include="ShowcaseShowTooltipControllerPatch.cs" />
+    <Compile Include="ShowcaseTooltipBypass.cs" />
+    <Compile Include="ShowcaseTooltipLockBypassPatch.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IgnoresAccessChecksToAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="TooltipModifierRefreshController.cs" />
+    <Compile Include="UpdatePlayerPatch.cs" />
+    <Compile Include="UpgradePreviewTooltipPatch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\monsters_bazaardb.json" />
+    <EmbeddedResource Include="Data\jules_tierlist.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
