@@ -1,0 +1,11 @@
+bin/
+libs/
+obj/
+/**/bin/
+/**/obj/
+/**/libs/
+.idea/
+Folder.DotSettings.user
+.vs/
+.DS_Store
+Data/cards.json
