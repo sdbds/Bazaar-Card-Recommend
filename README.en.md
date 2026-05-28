@@ -1,6 +1,11 @@
 # BazaarRecommend
 
-A BepInEx mod for The Bazaar that overlays tier rating badges on item cards, sourced from the [Unduel BazaarDB all-items tier list](https://unduel.com/u/bazaardb/all-items-in-the-bazaar-2p1gJ5h503y0TBHOLeR5RZ/tier-list).
+A BepInEx mod for The Bazaar that overlays tier rating badges on item and skill cards, sourced from Unduel BazaarDB.
+
+Data sources:
+
+- [All-items tier list](https://unduel.com/u/bazaardb/all-items-in-the-bazaar-2p1gJ5h503y0TBHOLeR5RZ/tier-list)
+- [Skills tier list](https://unduel.com/u/bazaardb/skills-the-bazaar-kzlmKmyavwVt79d3LIHqJ/tier-list)
 
 ![Preview](sample.png)
 
@@ -38,7 +43,7 @@ This mod requires BepInEx. The easiest way to get it is by installing [BazaarPlu
    C:\Users\<username>\AppData\Roaming\Tempo Launcher - Beta\game\buildx64\BepInEx\plugins\
    ```
 
-3. Launch the game. Tier badges will appear in the bottom-right corner of item cards during a match.
+3. Launch the game. Tier badges will appear in the bottom-right corner of item and skill cards during a match.
 
 ---
 
@@ -73,7 +78,12 @@ This mod requires BepInEx. The easiest way to get it is by installing [BazaarPlu
 
 ### Updating Tier Data
 
-Tier data is embedded from `Data/tierlist.json`, extracted from Unduel's all-items tier list and aligned to local game card GUIDs. To update ratings, edit the JSON file and rebuild.
+Tier data is embedded in the DLL:
+
+- `Data/tierlist.json`: item ratings extracted from Unduel's all-items tier list and aligned to local game card GUIDs.
+- `Data/skill_tierlist.json`: skill ratings extracted from Unduel's skills tier list and aligned to local game skill GUIDs.
+
+To update ratings, edit the corresponding JSON file and rebuild.
 
 ---
 

@@ -1,6 +1,11 @@
 # BazaarRecommend
 
-在 The Bazaar 游戏中，为每张物品卡牌右下角叠加显示来自 [Unduel BazaarDB 全物品 Tier List](https://unduel.com/u/bazaardb/all-items-in-the-bazaar-2p1gJ5h503y0TBHOLeR5RZ/tier-list) 的 Tier 评级徽章。
+在 The Bazaar 游戏中，为物品卡牌和技能卡牌右下角叠加显示来自 Unduel BazaarDB 的 Tier 评级徽章。
+
+数据来源：
+
+- [全物品 Tier List](https://unduel.com/u/bazaardb/all-items-in-the-bazaar-2p1gJ5h503y0TBHOLeR5RZ/tier-list)
+- [技能 Tier List](https://unduel.com/u/bazaardb/skills-the-bazaar-kzlmKmyavwVt79d3LIHqJ/tier-list)
 
 ![示意图](sample.png)
 
@@ -33,7 +38,7 @@
    C:\Program Files (x86)\Steam\steamapps\common\The Bazaar\BepInEx\plugins\
    ```
 
-3. 启动游戏，进入对局后物品卡牌右下角即可看到 Tier 徽章。
+3. 启动游戏，进入对局后物品卡牌和技能卡牌右下角即可看到 Tier 徽章。
 
 ---
 
@@ -68,7 +73,12 @@
 
 ### 更新 Tier 数据
 
-Tier 数据来源为 `Data/tierlist.json`（内嵌于 DLL），由 Unduel 的全物品 Tier List 提取，并用本地游戏缓存中的卡牌 GUID 对齐生成。若需更新评级，修改 json 文件后重新编译即可。
+Tier 数据内嵌于 DLL：
+
+- `Data/tierlist.json`：物品评级，由 Unduel 的全物品 Tier List 提取，并用本地游戏缓存中的卡牌 GUID 对齐生成。
+- `Data/skill_tierlist.json`：技能评级，由 Unduel 的技能 Tier List 提取，并用本地游戏缓存中的技能 GUID 对齐生成。
+
+若需更新评级，修改对应 json 文件后重新编译即可。
 
 ---
 
