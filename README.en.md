@@ -1,6 +1,6 @@
 # BazaarRecommend
 
-A BepInEx mod for The Bazaar that overlays tier rating badges on item cards, sourced from [bazaardb.gg](https://bazaardb.gg/tierlists).
+A BepInEx mod for The Bazaar that overlays tier rating badges on item cards, sourced from the [Unduel BazaarDB all-items tier list](https://unduel.com/u/bazaardb/all-items-in-the-bazaar-2p1gJ5h503y0TBHOLeR5RZ/tier-list).
 
 ![Preview](sample.png)
 
@@ -73,7 +73,7 @@ This mod requires BepInEx. The easiest way to get it is by installing [BazaarPlu
 
 ### Updating Tier Data
 
-Tier data is embedded from `Data/tierlist.json`, extracted from each hero's tier list page on bazaardb.gg. To update ratings, edit the JSON file and rebuild.
+Tier data is embedded from `Data/tierlist.json`, extracted from Unduel's all-items tier list and aligned to local game card GUIDs. To update ratings, edit the JSON file and rebuild.
 
 ---
 

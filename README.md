@@ -1,6 +1,6 @@
 # BazaarRecommend
 
-在 The Bazaar 游戏中，为每张物品卡牌右下角叠加显示来自 [bazaardb.gg](https://bazaardb.gg/tierlists) 的 Tier 评级徽章。
+在 The Bazaar 游戏中，为每张物品卡牌右下角叠加显示来自 [Unduel BazaarDB 全物品 Tier List](https://unduel.com/u/bazaardb/all-items-in-the-bazaar-2p1gJ5h503y0TBHOLeR5RZ/tier-list) 的 Tier 评级徽章。
 
 ![示意图](sample.png)
 
@@ -68,7 +68,7 @@
 
 ### 更新 Tier 数据
 
-Tier 数据来源为 `Data/tierlist.json`（内嵌于 DLL），由各英雄的 bazaardb.gg 页面提取生成。若需更新评级，修改json文件重新编译即可。
+Tier 数据来源为 `Data/tierlist.json`（内嵌于 DLL），由 Unduel 的全物品 Tier List 提取，并用本地游戏缓存中的卡牌 GUID 对齐生成。若需更新评级，修改 json 文件后重新编译即可。
 
 ---
 
